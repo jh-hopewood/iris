@@ -19,7 +19,7 @@ def load_data():
     if os.path.exists(DATA_FILE):
         df = pd.read_csv(DATA_FILE)
         # CSV 컬럼명에 맞춰 추출 (x, y, label)
-        X = df[['꽃받침 길이', '꽃받침 너빕']].values.astype(float)
+        X = df[['꽃받침 길이', '꽃받침 너비']].values.astype(float)
         y = df['종류'].values
         return X, y
     else:
