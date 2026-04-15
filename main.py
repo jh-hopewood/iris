@@ -1,3 +1,5 @@
+import streamlit as st
+
 st.set_page_config(
     page_title="KNN 시뮬레이터",
     layout="centered"
